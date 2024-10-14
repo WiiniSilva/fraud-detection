@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/winic/Documents/Renata/Portif%C3%B3lio/Fraude/fraud-detection/mlruns/0/f9f5c92eee8d409eaeb0068ff9aca673/artifacts
+end_time: 1728923775627
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f9f5c92eee8d409eaeb0068ff9aca673
+run_name: Treinamento_LightGBM_Hiperparametros_Variáveis_Reduzidas_dummies_reduced
+run_uuid: f9f5c92eee8d409eaeb0068ff9aca673
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728923291494
+status: 3
+tags: []
+user_id: winic
