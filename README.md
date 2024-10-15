@@ -53,13 +53,23 @@ As fraudes financeiras representam um desafio significativo para instituições 
 
 * Score 10: A presença de picos em 0 e a ligeira diferença na média entre fraudes e não fraudes indicam que quanto menor o score_10, maior a probabilidade de fraude.
 
-D* ocumentos Não Entregues: Transações onde o documento 1 não foi entregue (0) apresentam uma taxa de fraude significativamente maior (16.16%) em comparação às transações onde o documento foi entregue (1), com uma taxa de fraude de apenas 4.30%. Quando o documento 3 não é entregue (0), a taxa de fraude é de 8.18%, enquanto a entrega do documento 3 (1) reduz a taxa de fraude para 3.28%.
+* Documentos Não Entregues: Transações onde o documento 1 não foi entregue (0) apresentam uma taxa de fraude significativamente maior (16.16%) em comparação às transações onde o documento foi entregue (1), com uma taxa de fraude de apenas 4.30%. Quando o documento 3 não é entregue (0), a taxa de fraude é de 8.18%, enquanto a entrega do documento 3 (1) reduz a taxa de fraude para 3.28%.
 
 * Horário da Transação: Entre 0h e 4h, as fraudes são significativamente mais altas, com picos às 2h (19.65%) e 3h (15.68%), sugerindo que a madrugada é um horário de maior risco para fraudes.
 
 ## Engenharia de Features
 
-Explique as técnicas de engenharia de features utilizadas, como a criação de variáveis lag, transformação de variáveis e uso de técnicas de oversampling como SMOTE.
+* Criação de Variáveis Lag: Foram criadas variáveis "lag" para capturar o comportamento histórico das transações. Por exemplo, a data da transação foi desmembrada em Hora da Compra, Dia do Mês e Dia da Semana. Essas variáveis permitem analisar padrões temporais que podem ser indicativos de fraudes.
+
+* Transformação de Variáveis: Transformações foram realizadas em diversas variáveis para melhorar a análise. Exemplos incluem:
+
+    * Target Encoder: Utilizado nas variáveis Produto e Categoria Produto, devido à alta dimensionalidade dessas variáveis. O Target Encoder ajudou a reduzir a complexidade sem perder informações relevantes.
+
+    * Substituição de Valores Ausentes: Para as variáveis de score de 2 a 10, os valores ausentes foram substituídos pela mediana para lidar com a grande quantidade de outliers, melhorando a robustez das análises.
+
+* Amostragem Estratificada: Devido à baixa proporção de fraudes (apenas 5%), foi realizada uma amostragem estratificada. Essa técnica assegura que as diferentes classes estejam representadas de maneira proporcional no conjunto de dados de treinamento e teste, melhorando a precisão do modelo de detecção de fraudes.
+
+* Modelo de Regressão Logística: Foi treinado um modelo de regressão logística para analisar o sumário e identificar variáveis que não influenciam significativamente no modelo (P>0.05). Essas variáveis foram removidas para simplificar o modelo e melhorar sua eficiência sem comprometer a precisão.
 
 ## Modelagem
 
