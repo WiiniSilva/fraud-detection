@@ -73,6 +73,8 @@ As fraudes financeiras representam um desafio significativo para instituições 
 
 ## Modelagem
 
+Utilizamos MLFlow para gerenciar e monitorar os experimentos de treinamento dos modelos. Essa ferramenta nos permite rastrear e comparar diferentes configurações de hiperparâmetros, bem como registrar métricas importantes.
+
 Vários modelos de aprendizado de máquina foram treinados para identificar o que apresentava o melhor desempenho na detecção de fraudes. Os modelos avaliados incluem:
 
 ![Seleção do Modelo](output.png)
@@ -99,6 +101,15 @@ Esta abordagem garantiu a construção de um modelo de detecção de fraudes rob
 ![Melhores Hiperparametros encontrados:](image.png)
 
 ## Avaliação dos Modelos
+
+* Para gerenciar e monitorar os experimentos de treinamento do modelo, utilizamos o MLFlow. Esta ferramenta nos permite:
+
+    * Rastrear Experimentos: Registrar e acompanhar os experimentos com diferentes configurações de hiperparâmetros, facilitando a comparação de desempenho.
+
+    * Registrar Métricas: Armazenar métricas importantes como acurácia, precisão, recall, F1-score, Threshold, Perda, Faturamento, Lucro, entre outros, para análise posterior.
+
+    * Gerenciar Modelos: Salvar versões dos modelos treinados, facilitando a implantação e o monitoramento contínuo.
+
 
 * Curva ROC (Receiver Operating Characteristic): A área sob a curva (AUC) melhorou de 0.78 no modelo atual para 0.82 no modelo treinado com LightGBM. Essa melhoria significativa indica que o novo modelo é mais eficaz em distinguir entre transações fraudulentas e não fraudulentas, resultando em uma detecção de fraudes mais precisa e redução de falsos positivos e falsos negativos.
 
