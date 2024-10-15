@@ -75,6 +75,8 @@ As fraudes financeiras representam um desafio significativo para instituições 
 
 Vários modelos de aprendizado de máquina foram treinados para identificar o que apresentava o melhor desempenho na detecção de fraudes. Os modelos avaliados incluem:
 
+![Seleção do Modelo](output.png)
+
 * LightGBM (Light Gradient Boosting Machine)
 
 * XGBoost (Extreme Gradient Boosting)
@@ -94,11 +96,30 @@ Para otimizar os hiperparâmetros do LightGBM e garantir o melhor desempenho pos
 Esta abordagem garantiu a construção de um modelo de detecção de fraudes robusto e preciso, apto a identificar transações fraudulentas com alta eficácia.
 
 * Melhores Hiperparametros encontrados:
-![alt text](image.png)
+![Melhores Hiperparametros encontrados:](image.png)
 
 ## Avaliação dos Modelos
 
-Descreva as métricas de avaliação utilizadas para comparar os modelos, como AUC-ROC, accuracy, precision, recall e f1-score. Inclua uma comparação dos resultados dos modelos e gráficos como curvas ROC e matrizes de confusão.
+* Curva ROC (Receiver Operating Characteristic): A área sob a curva (AUC) melhorou de 0.78 no modelo atual para 0.82 no modelo treinado com LightGBM. Essa melhoria significativa indica que o novo modelo é mais eficaz em distinguir entre transações fraudulentas e não fraudulentas, resultando em uma detecção de fraudes mais precisa e redução de falsos positivos e falsos negativos.
+
+* Melhoria Geral na Acurácia: O modelo LightGBM mostrou uma melhora na acurácia geral, passando de 0.80 para 0.85.
+
+* Performance para Transações Não Fraudulentas: Embora a precisão (precision) e o F1-Score sejam ligeiramente menores no LightGBM, o recall é significativamente maior (0.87 vs. 0.81). Isso indica que o modelo LightGBM é mais eficaz em capturar transações não fraudulentas, resultando em menos falsos negativos.
+
+* Detecção de Fraudes: A precisão (precision) e o F1-Score para fraudes aumentaram no LightGBM (precision: 0.20 vs. 0.16, F1-Score: 0.30 vs. 0.26). No entanto, o recall caiu um pouco (0.58 vs. 0.69). Embora haja uma leve diminuição no recall, a melhoria na precisão e no F1-Score sugere que o modelo está melhor em reduzir falsos positivos.
+
+### Comparação Financeira
+
+|  Modelo                  | Threshold | Perda      | Faturamento | Lucro      |
+|--------------------------|-----------|------------|-------------|------------|
+| **Atual**                | 73.000    | 19,811.050 | 55,751.644  | 35,940.594 |
+| **Novo Modelo (LightGBM)** | 59.000    | 20,134.510 | 57,073.044  | 36,938.534 |
+
+Comparando os resultados financeiros, o novo modelo LightGBM apresenta um aumento no lucro (de 35,940.594 para 36,938.534), apesar de um leve aumento na perda. O aumento significativo no faturamento contribuiu para essa melhoria geral no desempenho financeiro.
+
+![LightGBM Vs XGBoost](image-2.png)
+
+![LightGBM Vs XGBoost](image-1.png)
 
 ## Conclusão
 

@@ -1,8 +1,9 @@
 artifact_uri: file:///c:/Users/winic/Documents/Renata/Portif%C3%B3lio/Fraude/fraud-detection/mlruns/0/36577d410f5740bcb49ef52c8d92cbc0/artifacts
+deleted_time: 1729010149773
 end_time: 1728989748438
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 36577d410f5740bcb49ef52c8d92cbc0
 run_name: Treinamento_XGBoost_Hiperparametros
 run_uuid: 36577d410f5740bcb49ef52c8d92cbc0

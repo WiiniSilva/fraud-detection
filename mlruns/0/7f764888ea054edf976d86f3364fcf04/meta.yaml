@@ -1,8 +1,9 @@
 artifact_uri: file:///c:/Users/winic/Documents/Renata/Portif%C3%B3lio/Fraude/fraud-detection/mlruns/0/7f764888ea054edf976d86f3364fcf04/artifacts
+deleted_time: 1729010149799
 end_time: 1728936064634
 entry_point_name: ''
 experiment_id: '0'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 7f764888ea054edf976d86f3364fcf04
 run_name: Treinamento_LightGBM_Hiperparametros_Variáveis_Reduzidas
 run_uuid: 7f764888ea054edf976d86f3364fcf04
