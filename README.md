@@ -27,9 +27,35 @@ As fraudes financeiras representam um desafio significativo para instituições 
 
 * Redução de Dimensionalidade: As variáveis Produto e Categoria Produto continham uma grande variedade de informações. Para reduzir a dimensionalidade e melhorar a análise, foi utilizado o método Target Encoder.
 
+* Substituição de Valores Ausentes: Para as variáveis de score de 2 a 10, os valores ausentes foram substituídos pela mediana. Essa abordagem foi adotada devido à grande quantidade de outliers presentes nessas variáveis.
+
 ## Análise Exploratória dos Dados
 
-Descreva as principais análises exploratórias realizadas, como a distribuição das variáveis, análise de correlação e identificação de outliers.
+* Distribuição de Fraudes: Apenas 5% dos dados representam transações fraudulentas.
+
+* Score 1: Transações fraudulentas tendem a apresentar valores mais baixos para o score_1, indicando que um score_1 baixo pode ser um bom indicador de maior probabilidade de fraude.
+
+* Score 2: Apesar de apresentar valores altos, o score_2 sozinho não é capaz de prever fraudes com precisão. Portanto, será necessário utilizar múltiplos scores e outros fatores no modelo de detecção de fraudes.
+
+* Score 3: A média do score_3 é praticamente a mesma para fraudes e não fraudes, sugerindo que esta variável, isoladamente, pode não ser um forte discriminador entre as duas classes.
+
+* Score 4: Quanto menor o score_4, maior a probabilidade de fraude, tornando-se um bom discriminador entre transações fraudulentas e não fraudulentas.
+
+* Score 5: As diferenças nas distribuições (fraudulentas e não fraudulentas) sugerem que o score_5 tem um comportamento distinto nas fraudes, tornando-se uma variável importante para o modelo de detecção de fraudes.
+
+* Score 6: A diferença nas distribuições sugere que o score_6 pode ser um bom discriminador entre transações fraudulentas e não fraudulentas, com pontuações mais baixas associadas a um risco maior de fraude.
+
+* Score 7: A maioria dos valores de score_7 está concentrada nos intervalos mais baixos, com a cauda se estendendo para valores mais altos.
+
+* Score 8: O score_8 apresenta uma distribuição aproximadamente uniforme, com frequências relativamente constantes ao longo da faixa de valores.
+
+* Score 9: A tendência de fraudes apresentarem scores_9 mais baixos pode ser explorada no modelo de detecção, ajudando a identificar transações suspeitas.
+
+* Score 10: A presença de picos em 0 e a ligeira diferença na média entre fraudes e não fraudes indicam que quanto menor o score_10, maior a probabilidade de fraude.
+
+D* ocumentos Não Entregues: Transações onde o documento 1 não foi entregue (0) apresentam uma taxa de fraude significativamente maior (16.16%) em comparação às transações onde o documento foi entregue (1), com uma taxa de fraude de apenas 4.30%. Quando o documento 3 não é entregue (0), a taxa de fraude é de 8.18%, enquanto a entrega do documento 3 (1) reduz a taxa de fraude para 3.28%.
+
+* Horário da Transação: Entre 0h e 4h, as fraudes são significativamente mais altas, com picos às 2h (19.65%) e 3h (15.68%), sugerindo que a madrugada é um horário de maior risco para fraudes.
 
 ## Engenharia de Features
 
