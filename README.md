@@ -117,13 +117,40 @@ Esta abordagem garantiu a construção de um modelo de detecção de fraudes rob
 
 Comparando os resultados financeiros, o novo modelo LightGBM apresenta um aumento no lucro (de 35,940.594 para 36,938.534), apesar de um leve aumento na perda. O aumento significativo no faturamento contribuiu para essa melhoria geral no desempenho financeiro.
 
+* Abaixo duas imagens mostrando a diferença do esultado entre os modelos LightGBM e XGBoost:
 ![LightGBM Vs XGBoost](image-2.png)
 
 ![LightGBM Vs XGBoost](image-1.png)
 
 ## Conclusão
 
-Resuma as principais conclusões do projeto, destacando o melhor modelo e as métricas de desempenho. Discuta possíveis melhorias futuras e próximos passos.
+Neste projeto, realizamos uma análise detalhada das transações para detectar fraudes. Utilizamos técnicas avançadas de engenharia de features, como a criação de variáveis lag, transformação de variáveis e oversampling com SMOTE, para melhorar a qualidade dos dados e preparar um modelo de detecção de fraudes robusto.
+
+1. Após treinar e avaliar diversos modelos de aprendizado de máquina, o LightGBM se destacou como o melhor desempenho. As principais métricas de desempenho mostraram melhorias significativas:
+
+* Acurácia Geral: Aumentou de 0.80 para 0.85.
+
+* Taxa de Aprovação: Subiu de 79% para 84.5%.
+
+* Curva ROC (AUC): Melhorou de 0.78 para 0.82.
+
+Além disso, o modelo LightGBM demonstrou uma maior capacidade de detectar fraudes e reduzir falsos positivos, resultando em um aumento no lucro, de 35,940.594 para 36,938.534.
+
+2. Para continuar melhorando a detecção de fraudes, consideramos algumas abordagens futuras:
+
+* Incorporação de Novos Dados: Incluir novas variáveis e fontes de dados que possam fornecer informações adicionais sobre transações fraudulentas.
+
+* Aprimoramento de Algoritmos: Testar e implementar algoritmos mais avançados e técnicas de ensemble para melhorar ainda mais o desempenho do modelo.
+
+* Otimização Contínua: Realizar uma otimização contínua dos hiperparâmetros e ajustes finos no modelo para garantir que ele se adapte às mudanças nos padrões de fraude.
+
+3. Próximos Passos
+
+* Implementação do Modelo: Implementar o modelo LightGBM no sistema de produção para monitorar e detectar fraudes em tempo real.
+
+* Monitoramento e Avaliação: Estabelecer um processo de monitoramento contínuo do desempenho do modelo e realizar ajustes conforme necessário.
+
+* Feedback e Melhoria: Coletar feedback dos usuários e partes interessadas para identificar áreas de melhoria e ajustar o modelo conforme necessário.
 
 ## Referências
 
