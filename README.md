@@ -98,7 +98,7 @@ Para otimizar os hiperparâmetros do LightGBM e garantir o melhor desempenho pos
 Esta abordagem garantiu a construção de um modelo de detecção de fraudes robusto e preciso, apto a identificar transações fraudulentas com alta eficácia.
 
 * Melhores Hiperparametros encontrados:
-Imagens/image.png
+![Melhores Hiperparametros](Imagens/image.png)
 
 ## Avaliação dos Modelos
 
