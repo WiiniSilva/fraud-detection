@@ -1,0 +1,16 @@
+artifact_uri: file:///c:/Users/winic/Documents/Renata/Portif%C3%B3lio/Fraude/fraud-detection/mlruns/0/7884b2d74751450eae7093bdf4251e2e/artifacts
+deleted_time: 1728996894536
+end_time: 1728996884477
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+run_id: 7884b2d74751450eae7093bdf4251e2e
+run_name: Treinamento_RF_Hiperparametros
+run_uuid: 7884b2d74751450eae7093bdf4251e2e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728991896826
+status: 3
+tags: []
+user_id: winic

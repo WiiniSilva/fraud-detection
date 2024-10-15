@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/winic/Documents/Renata/Portif%C3%B3lio/Fraude/fraud-detection/mlruns/0/b39e9dbeff834d679f45c2fe431e7b42/artifacts
+end_time: 1728991883313
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b39e9dbeff834d679f45c2fe431e7b42
+run_name: Treinamento_LightGBM_Hiperparametros
+run_uuid: b39e9dbeff834d679f45c2fe431e7b42
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1728991021584
+status: 3
+tags: []
+user_id: winic
