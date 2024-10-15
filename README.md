@@ -17,9 +17,15 @@ Este projeto tem como objetivo detectar fraudes em transações financeiras util
 
 As fraudes financeiras representam um desafio significativo para instituições financeiras e empresas em todo o mundo. Elas podem resultar em enormes perdas financeiras, danos à reputação e desconfiança dos clientes. Com o aumento das transações digitais, detectar e prevenir fraudes tornou-se ainda mais crucial. Utilizar técnicas de aprendizado de máquina para identificar padrões anômalos em transações pode fornecer uma defesa eficaz contra fraudes. Este projeto visa explorar e aplicar essas técnicas para melhorar a detecção de atividades fraudulentas, protegendo tanto as organizações quanto seus clientes. 
 
-## Carregamento e Pré-processamento dos Dados
+## Pré-processamento dos Dados
 
-Explique como os dados foram carregados e os principais passos de pré-processamento realizados, como limpeza de dados, tratamento de valores ausentes e codificação de variáveis categóricas.
+* Filtragem Geográfica: Foram selecionadas apenas transações realizadas no Brasil.
+
+* Entrega de Documentos: Foram considerados como fraudes os casos em que os valores estavam ausentes na entrega dos documentos de 1 a 3.
+
+* Transformação da Data da Transação: A data da transação foi desmembrada em três variáveis distintas: Hora da Compra, Dia do Mês e Dia da Semana. Essa separação foi feita para melhor compreender o comportamento dos fraudadores.
+
+* Redução de Dimensionalidade: As variáveis Produto e Categoria Produto continham uma grande variedade de informações. Para reduzir a dimensionalidade e melhorar a análise, foi utilizado o método Target Encoder.
 
 ## Análise Exploratória dos Dados
 
