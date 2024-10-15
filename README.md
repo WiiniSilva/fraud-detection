@@ -73,7 +73,28 @@ As fraudes financeiras representam um desafio significativo para instituições 
 
 ## Modelagem
 
-Detalhe os modelos de aprendizado de máquina utilizados, como `XGBClassifier`, `RandomForestClassifier` e `SARIMA`. Inclua a definição dos hiperparâmetros e a otimização utilizando técnicas como `RandomizedSearchCV` e `GridSearchCV`.
+Vários modelos de aprendizado de máquina foram treinados para identificar o que apresentava o melhor desempenho na detecção de fraudes. Os modelos avaliados incluem:
+
+* LightGBM (Light Gradient Boosting Machine)
+
+* XGBoost (Extreme Gradient Boosting)
+
+* Random Forest
+
+* Decision Tree
+
+* Logistic Regression
+
+Cada modelo foi treinado e avaliado com base em seu desempenho, a fim de determinar qual seria o mais eficaz para o problema de detecção de fraudes.
+
+Após uma análise detalhada dos resultados, o modelo LightGBM foi selecionado devido ao seu desempenho superior. O LightGBM não só demonstrou maior capacidade preditiva como também eficiência computacional em relação aos outros modelos testados.
+
+Para otimizar os hiperparâmetros do LightGBM e garantir o melhor desempenho possível, foi utilizada a técnica de Random Search. Esta técnica permite explorar uma grande quantidade de combinações de hiperparâmetros de forma eficiente, encontrando as configurações que maximizam o desempenho do modelo.
+
+Esta abordagem garantiu a construção de um modelo de detecção de fraudes robusto e preciso, apto a identificar transações fraudulentas com alta eficácia.
+
+* Melhores Hiperparametros encontrados:
+![alt text](image.png)
 
 ## Avaliação dos Modelos
 
