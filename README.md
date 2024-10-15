@@ -154,6 +154,5 @@ Além disso, o modelo LightGBM demonstrou uma maior capacidade de detectar fraud
 
 ## Referências
 
-Liste as principais referências utilizadas no projeto, incluindo artigos, documentação de bibliotecas e outros recursos relevantes.
-
-
+Para mais informações detalhadas sobre as técnicas utilizadas e a implementação do modelo, consulte os links: [Prepáratorio para Entrevistas em Dados (PED)](https://renatabiaggi.com/ped/)
+ e [Estatistica do Básico ao Avançado (EBA)](https://renatabiaggi.com/eba/)
