@@ -77,7 +77,7 @@ Utilizamos MLFlow para gerenciar e monitorar os experimentos de treinamento dos 
 
 Vários modelos de aprendizado de máquina foram treinados para identificar o que apresentava o melhor desempenho na detecção de fraudes. Os modelos avaliados incluem:
 
-![Seleção do Modelo](output.png)
+![Seleção do Modelo](Imagens/output.png)
 
 * LightGBM (Light Gradient Boosting Machine)
 
@@ -98,7 +98,7 @@ Para otimizar os hiperparâmetros do LightGBM e garantir o melhor desempenho pos
 Esta abordagem garantiu a construção de um modelo de detecção de fraudes robusto e preciso, apto a identificar transações fraudulentas com alta eficácia.
 
 * Melhores Hiperparametros encontrados:
-![Melhores Hiperparametros encontrados:](image.png)
+Imagens/image.png
 
 ## Avaliação dos Modelos
 
@@ -129,9 +129,9 @@ Esta abordagem garantiu a construção de um modelo de detecção de fraudes rob
 Comparando os resultados financeiros, o novo modelo LightGBM apresenta um aumento no lucro (de 35,940.594 para 36,938.534), apesar de um leve aumento na perda. O aumento significativo no faturamento contribuiu para essa melhoria geral no desempenho financeiro.
 
 * Abaixo duas imagens mostrando a diferença do esultado entre os modelos LightGBM e XGBoost:
-![LightGBM Vs XGBoost](image-2.png)
+![LightGBM Vs XGBoost](Imagens/image-2.png)
 
-![LightGBM Vs XGBoost](image-1.png)
+![LightGBM Vs XGBoost](Imagens/image-1.png)
 
 ## Conclusão
 
