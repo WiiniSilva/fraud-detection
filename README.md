@@ -1,5 +1,8 @@
 # Case Fraude
 
+Confira o projeto completo no link:
+[Notebook do Projeto](https://github.com/WiiniSilva/fraud-detection/blob/main/Notebook/Case%20Fraude.ipynb)
+
 Este projeto tem como objetivo detectar fraudes em transações financeiras utilizando técnicas de aprendizado de máquina. O notebook `Case Fraude.ipynb` contém todo o fluxo de trabalho do projeto, incluindo a preparação dos dados, modelagem e avaliação dos modelos.
 
 ## Conteúdo
